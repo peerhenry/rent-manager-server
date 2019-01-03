@@ -1,7 +1,7 @@
 // The root provides a resolver function for each API endpoint
 
 var root = {
-  s: () => vehicles,
+  vehicles: () => vehicles,
   getVehicle: ({id}) => {
     return vehicles.find(e => e.id === id);
   }
