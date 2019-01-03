@@ -1,0 +1,17 @@
+type Query {
+  vehicles: [Vehicle],
+  getVehicle(id: ID!): Vehicle
+}
+
+type Vehicle {
+  id: ID!,
+  year: Int,
+  make: String,
+  model: String,
+  bodyStyle: String,
+  trimLevel: String,
+  seats: Int,
+  color: String,
+  licensePlate: String!,
+  description: String
+}
